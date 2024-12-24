@@ -5,8 +5,8 @@ import fig_1 from './refressh.png';
 
 const Quote = () => {
     const [[quotee], setQuotee] = useState([{
-        quote: "",
-        author: ""
+        quote: "Growth itself contains the germ of happiness.",
+        author: "Pearl S. Buck"
     }]);
 
     const api_url = 'https://api.api-ninjas.com/v1/quotes?category=happiness'
