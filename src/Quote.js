@@ -5,8 +5,8 @@ import fig_1 from './refressh.png';
 
 const Quote = () => {
     const [[quotee], setQuotee] = useState([{
-        quote: "The will of man is his happiness.",
-        author: "Friedrich Schiller"
+        quote: "",
+        author: ""
     }]);
 
     const api_url = 'https://api.api-ninjas.com/v1/quotes?category=happiness'
@@ -20,6 +20,7 @@ const Quote = () => {
             alert(error.response.data.message)
         })
     }
+    React.useEffect (()=>new_quote,[]);
     return (
         <div className='quote_gen'>
             <div className='thought'>
